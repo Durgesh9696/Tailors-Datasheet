@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@menu/menu_group_edit">
+
+    <item android:id="@+id/edit_customer_data"
+        android:title="Edit Customer Data"
+        />
+
+    <item android:id="@+id/edit_pent_data"
+        android:title="Edit Pent Data"
+        />
+
+    <item android:id="@+id/edit_shirt_data"
+        android:title="Edit Shirt Data"
+        />
+
+</menu>

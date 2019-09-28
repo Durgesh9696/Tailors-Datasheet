@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "vertical">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@android:color/black"
+                    android:text="Personal Information"/>
+
+                <EditText
+                    android:id="@+id/male_customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Customer Name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLength="30"/>
+
+                <EditText
+                    android:id="@+id/male_customer_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLength="50"/>
+
+                <EditText
+                    android:id="@+id/male_customer_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact Number"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"/>
+
+
+                <EditText
+                    android:id="@+id/male_customer_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Gender"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@android:color/black"
+                    android:text="Pent Details"/>
+
+                <EditText
+                    android:id="@+id/pent_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Length"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bottom"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/pent_bottom"
+                    android:layout_marginTop="10dp"
+                    android:maxLength="5"/>
+
+                <EditText
+                    android:id="@+id/pent_west"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="West"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/pent_hip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Hip"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/pent_fly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Fly"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/pent_thigh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Thigh"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/pent_thigh_ready"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Thigh Ready"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@android:color/black"
+                    android:text="Shirt Details"/>
+
+                <EditText
+                    android:id="@+id/shirt_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Length"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/shirt_chest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Chest"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/shirt_stomach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Stomach"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/shirt_loosing"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Loosing"
+                    android:inputType="number"
+                    android:maxLength="5"/>
+
+                <EditText
+                    android:id="@+id/shirt_neck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Neck"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/shirt_shoulder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Shoulder"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/shirt_sleves"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Sleves"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <!--<Button
+                android:id="@+id/btn_add_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorDark"
+                android:textColor="@android:color/white"
+                android:text="Add Customer"
+                />-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

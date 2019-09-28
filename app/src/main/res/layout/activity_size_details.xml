@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".SizeDetailsActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pent Details"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:padding="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:baselineAligned="false">
+
+            <!--pent length-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Length"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_pent_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+            <!--pent bottom-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bottom"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            >
+
+            <!--pent west-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="West"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_west"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+            <!--pent hip-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hip"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_hip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:baselineAligned="false">
+
+            <!--pent fly-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fly"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_fly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+            <!--pent Thigh-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thigh"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_thigh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thigh Ready"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                />
+
+            <EditText
+                android:id="@+id/et_thigh_ready"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginEnd="20dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@android:color/darker_gray"
+            />
+
+        <TextView
+            android:id="@+id/tv_shirt_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shirt Details"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:padding="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <!--shirt length-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Length"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_shirt_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+            <!--shirt chest-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chest"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_chest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:baselineAligned="false">
+
+            <!--shirt stomach-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stomach"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_stomach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+            <!--shirt loosing-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loosing"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_loosing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:baselineAligned="false">
+
+            <!--shirt Neck-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Neck"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_neck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+            <!--shirt shoulder-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shoulder"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_shoulder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sleeves"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                />
+
+            <EditText
+                android:id="@+id/et_sleeves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginStart="20dp"
+                />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previous"
+                android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/white"
+                android:onClick="onPreviousClicked"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="end"
+                android:background="@color/colorAccent"
+                android:onClick="onSaveClicked"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

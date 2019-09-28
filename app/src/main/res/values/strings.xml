@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Tailor\'s DataSheet</string>
+    <string name="foreign_key_status">PRAGMA foreign_keys=ON</string>
+</resources>

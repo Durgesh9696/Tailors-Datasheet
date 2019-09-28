@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/splash_screen"
+    android:background="@drawable/measure1"
+    tools:context=".SplashActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tailor's DataSheet"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:padding="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="50dp"
+            android:padding="20dp"
+            android:textColorHint="@android:color/white"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your shop name"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:maxLines="30"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/save_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="20dp"
+            android:background="#939191"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewDetailsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Customer Name"
+            app:titleTextColor="@android:color/white"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar_layout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            >
+
+            <!--customer details-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer Details"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:padding="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Name"
+                android:textColor="@android:color/black"
+                android:enabled="false"
+                android:inputType="text"
+                android:importantForAutofill="no"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Address"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Contact Number"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Gender"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                tools:targetApi="o" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <!--pent details-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pent Details"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Length"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_pent_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Length"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bottom"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Bottom"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="West"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_west"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="West"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hip"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_hip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Hip"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fly"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_fly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Fly"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thigh"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_thigh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Thigh"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thigh Ready"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_thigh_ready"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Thigh Ready"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <!--Shirt details-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shirt Details"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Length"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_shirt_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Length"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false"
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chest"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_chest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Chest"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                tools:targetApi="o"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stomach"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_stomach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Stomach"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loosing"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_loosing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Loosing"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Neck"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_neck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Neck"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shoulder"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_shoulder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Shoulder"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sleeves"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <EditText
+                android:id="@+id/et_sleeves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint="Sleeves"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:enabled="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
